@@ -1,38 +1,40 @@
-/* phone */
-@media only screen and (max-width: 511px){
+/* specify the size of the divs */
+header {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+main {
+  height: 100px;
+  width: 100px;
+  background: green;
+}
+footer {
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+/* ----------------------------------------------------- */
+/* change text in footer depending on the screen width */
+
+/* phone [width < 512px] */
+@media only screen and (max-width: 512px){
     .phone { display: inline-block; }
     .tablet { display: none; }
     .desktop { display: none; }
 }
   
-/* tablet */
+/* tablet [512 <= width < 1024px] */
 @media only screen and (min-width: 512px){
     .phone { display: none; }
     .tablet { display: inline-block; }
     .desktop { display: none; }
 }
   
-/* desktop */
+/* desktop [1024 <= width] */
 @media only screen and (min-width: 1024px){
     .phone { display: none; }
     .tablet { display: none; }
     .desktop { display: inline-block; }
   }
   
-header {
-      height: 100px;
-      width: 100px;
-      background: red;
-  }
-
-main {
-    height: 100px;
-    width: 100px;
-    background: green;
-}
-
-footer {
-    height: 100px;
-    width: 100px;
-    background: blue;
-}
